@@ -1030,7 +1030,7 @@ class _ImagePickerState extends State<ImagePicker>
                           child: Image.memory(thumbnail, fit: BoxFit.cover)),
                       title: Text(album.name,
                           style: const TextStyle(color: Colors.white)),
-                      subtitle: Text(album.assetCount.toString(),
+                      subtitle: Text(album.assetCountAsync.toString(),
                           style: const TextStyle(color: Colors.grey)),
                       onTap: () async {
                         callback.call(album);
@@ -1455,12 +1455,12 @@ class _ImagePickerState extends State<ImagePicker>
     if (_controller?.value == null) return const SizedBox();
 
     final ButtonStyle styleAuto = TextButton.styleFrom(
-      primary: _controller?.value.exposureMode == ExposureMode.auto
+      foregroundColor: _controller?.value.exposureMode == ExposureMode.auto
           ? Colors.orange
           : Colors.white,
     );
     final ButtonStyle styleLocked = TextButton.styleFrom(
-      primary: _controller?.value.exposureMode == ExposureMode.locked
+      foregroundColor: _controller?.value.exposureMode == ExposureMode.locked
           ? Colors.orange
           : Colors.white,
     );
