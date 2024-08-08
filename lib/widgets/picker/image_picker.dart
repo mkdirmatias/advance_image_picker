@@ -425,7 +425,7 @@ class _ImagePickerState extends State<ImagePicker>
                   actions: <Widget>[
                     TextButton(
                       style: TextButton.styleFrom(
-                        primary: Colors.black87,
+                        foregroundColor: Colors.black87,
                         minimumSize: const Size(88, 36),
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         shape: const RoundedRectangleBorder(
@@ -437,7 +437,7 @@ class _ImagePickerState extends State<ImagePicker>
                     ),
                     TextButton(
                       style: TextButton.styleFrom(
-                        primary: Colors.black87,
+                        foregroundColor: Colors.black87,
                         minimumSize: const Size(88, 36),
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         shape: const RoundedRectangleBorder(
